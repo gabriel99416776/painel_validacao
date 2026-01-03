@@ -32,7 +32,7 @@ if (mysqli_num_rows($result) > 0) {
         $ips_status[] = [
             'ip' => $ip,
             'status' => $status,
-            'ping' => $latencia !== null ? $latencia . ' ms' : 'timeout'
+            'ping' => $latencia !== null ? $latencia . ' ms' : 'Sem Conexão'
         ];
     }
 } else {

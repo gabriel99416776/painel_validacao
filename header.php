@@ -1,8 +1,154 @@
-<?php
-
-?>
-<!-- -------------- Navegação do Header + Responsividade do Dropdown ------------ -->
 <style>
+    body{
+        background-color: #f8f9fa;
+    }
+    nav{
+        background-color: #edf2fb;
+        border-bottom: 7px solid #288EFF;
+    }
+    .navbar-nav{
+        margin-right: 40px;
+    }
+    .nav-link {
+        color: #000;
+        font-size: 17px;
+        font-weight: 600;
+       
+    }
+
+    a {
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+    }
+
+    a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #604BFF;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    a:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    @media screen and (max-height: 300px) {
+        ul {
+            margin-top: 40px;
+        }
+    }
+</style>
+
+
+
+<nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+
+        <!-- LOGO -->
+        <a class="navbar-brand" href="#">
+            <img src="img/eurekha.png" alt="">
+        </a>
+
+        <!-- BOTÃO OFFCANVAS -->
+        <button class="navbar-toggler d-lg-none border-0" type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- MENU DESKTOP -->
+        <div class="collapse navbar-collapse d-none d-lg-flex">
+            <ul class="navbar-nav ms-auto gap-2">
+                <li class="nav-item">
+                    <a class="nav-link nav-btn" href="#">🏠︎ Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-btn" href="#">📱 Leitores</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+
+<!-- OFFCANVAS (somente mobile) -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                    Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <form class="d-flex mt-3">
+            <input class="form-control me-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success">Search</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- -------------- Navegação do Header + Responsividade do Dropdown ------------ -->
+<!-- <style>
     strong{
         font-weight: 600;
         font-size: 20px;
@@ -75,4 +221,4 @@
             
         </div>
         
-    </nav>
+    </nav> -->

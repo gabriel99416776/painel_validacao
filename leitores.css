@@ -12,28 +12,6 @@ section .container {
   margin-bottom: 50px;
 }
 
-nav {
-  background-image: linear-gradient(
-    to bottom,
-    #967adc 0%,
-    #967adc87 0%,
-    #ffffff 100%
-  );
-}
-
-nav .btn-custom-input {
-  color: #000;
-  font-weight: bold;
-}
-
-nav .btn-custom-input:hover {
-  background-color: #967adc;
-}
-
-nav .search-custom {
-  border: 1px solid;
-  box-shadow: 1px 1px 1px #000;
-}
 
 .toggle-arrow.rotate {
   transform: rotate(90deg);
@@ -148,17 +126,17 @@ section .leitores-custom button:hover {
 
 section .list-group-item {
   border-color: #967adc;
-  
+
   border-width: 2px;
-  
+
   padding: 30px;
 }
 
 section .form-check-input {
   border: 2px solid #000;
-  
+
   background-color: #fff;
-  
+
   box-shadow: none;
   cursor: pointer;
 }
@@ -166,7 +144,7 @@ section .form-check-input {
 section .form-check-input:focus,
 section .form-check-input:active {
   box-shadow: none;
-  
+
 }
 
 @media (max-width: 1200px) {
@@ -258,3 +236,25 @@ section .bi-info-square:hover {
 section .botaoportaria {
   margin-left: 200px;
 }
+
+
+.leitor-online {
+
+  border-bottom: .5px solid #28a745;
+}
+
+.leitor-offline {
+
+  border-bottom: .5px solid #dc3545;
+}
+
+.botao-limpar-tabela {
+  font-size: 13px;
+  color: #fff;
+  background-color: #604AFF;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+
